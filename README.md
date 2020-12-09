@@ -37,7 +37,7 @@ Look at [Assignment 3 Integrating AI.ipynb](Assignment%203%20Integrating%20AI.ip
 
 ### Proposal for applying innovative methods for analysis and visualisation of the implemented business data scenarios, to our BI project
 
-![Data Preparation in VR/MR/AR](BI-exam-data-prep-VR.png)
+<br>
 
 #### Data prep in VR/MR/AR
 
@@ -45,13 +45,21 @@ We imagine a data preparation tool like Tableau Prep, could be done in VR/MR/AR 
 
 When you are done, you can call up your boss mr. Tong, and show him the results in a co-op session. All he needs is to put on his VR/MR/AR headset, and he can jump right in. If he is busy, you can turn on mixed reality, and prepare your presentation by presenting to your dog.
 
-#### Understanding data in a new dimension
+![Data Preparation in VR/MR/AR](BI-exam-data-prep-VR.png)
 
-![Game data by region](BI-exam-games-regions.png)
+##### Image created by Andreas Guldborg Heick
+
+<br>
+
+#### Understanding data in a new dimension
 
 Here we imagine a 3D interactive world map where you can point or select areas or regions, and see which game genres they prefer in each world region, as you prepare your marketing campaign for your new game.
 
 Maybe you are in a meeting with all the company bosses, and you want to show sales for each region interactively in a co-op session. The Chief Financial Officer wants to know how we are doing in Europe, so he points to that region and it reveals data for everyone else.
+
+![Game data by region](BI-exam-games-regions.png)
+
+##### Image created by Andreas Guldborg Heick
 
 ### Benefits of applying such techniques for data analytics and visualisation in BI
 
