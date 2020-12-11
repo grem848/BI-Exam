@@ -15,6 +15,12 @@ Look at Assignment 3 Integrating AI.ipynb for our solution
 - Game reviews effect on time played
 - Use steamdb data for something
 
+### Final case
+
+We have decided to look and analyze two datasets, one containing video game sales, and one containing game reviews from the Metacritic website. For this we decided to look at things like how game reviews and game sales affect eachother, and if there even is a connection. We will also look at other information these datasets provide, like genres, sales and more. 
+We will be using the Tableau tools and Python for our project.
+
+
 #### Links
 
 - https://cs-agents.com/blog/game-review-affect-game-purchases/
