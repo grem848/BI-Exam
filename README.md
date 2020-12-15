@@ -17,9 +17,8 @@ Look at Assignment 3 Integrating AI.ipynb for our solution
 
 ### Final case
 
-We have decided to look and analyze two datasets, one containing video game sales, and one containing game reviews from the Metacritic website. For this we decided to look at things like how game reviews and game sales affect eachother, and if there even is a connection. We will also look at other information these datasets provide, like genres, sales and more. 
+We have decided to look and analyze two datasets, one containing video game sales, and one containing game reviews from the Metacritic website. For this we decided to look at things like how game reviews and game sales affect eachother, and if there even is a connection. We will also look at other information these datasets provide, like genres, sales and more.
 We will be using the Tableau tools and Python for our project.
-
 
 #### Links
 
@@ -32,8 +31,37 @@ Look at [Book-Exam.twb](Book-Exam.twb)
 
 ### Datasets
 
+We have two datasets that we are using for this project, one is a video game sales dataset, that contains these fields:
+
+- Rank - Ranking of overall sales
+- Name - The games name
+- Platform - Platform of the games release (i.e. PC, PS4, etc.)
+- Year - Year of the game's release
+- Genre - Genre of the game
+- Publisher - Publisher of the game
+- NA_Sales - Sales in North America (in millions)
+- EU_Sales - Sales in Europe (in millions)
+- JP_Sales - Sales in Japan (in millions)
+- Other_Sales - Sales in the rest of the world (in millions)
+- Global_Sales - Total worldwide sales.
+
+The next dataset is the metacritic game review dataset, containing metacritics collection of professional game reviews from 2011-2019 across platforms.
+
+- name - The review site/magazine name
+- review - The review text content
+- game - Name of the reviewed game
+- platform - Game platform
+- score - 0-100 Review score
+- date - Date of the review
+
+Here are the links to the datasets:
+
 - https://www.kaggle.com/gregorut/videogamesales
 - https://www.kaggle.com/skateddu/metacritic-critic-games-reviews-20112019
+
+### Data Prep using Tableau Prep
+
+We combined the datasets by ....
 
 ## Integrating AI
 
