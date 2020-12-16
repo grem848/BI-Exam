@@ -9,25 +9,37 @@ Look at Assignment 3 Integrating AI.ipynb for our solution
 - Mohammad Hariri
 - Andreas Heick
 
-### Case ideas
+### Case ideas/domain
 
 - Game reviews effect on game purchases
 - Game reviews effect on time played
-- Use steamdb data for something
+- Game data in general
+- Use steamdb data for analysis
 
-### Final case
+Our main idea is to look at game data, and use our Business Intelligence skills to analyze said data and gain valuable business knowledge.
+The idea stems from a System Integration project we have been working on during the semester, which combines several services to make up a game review/game information platform, called gameRev. While working on this project we eyed the possibility to combine these two classes, since our work on the SI project, showed us the vast amounts of data that games contain.
 
-We have decided to look and analyze two datasets, one containing video game sales, and one containing game reviews from the Metacritic website. For this we decided to look at things like how game reviews and game sales affect eachother, and if there even is a connection. We will also look at other information these datasets provide, like genres, sales and more.
-We will be using the Tableau tools and Python for our project.
+#### Sources for inspiration
 
-#### Links
+Here are some sources we found that discuss some of the same topics that we initially wanted to go for. We have also included a link to our other project, as it also inspired us.
 
 - https://cs-agents.com/blog/game-review-affect-game-purchases/
 - https://www.dailydot.com/parsec/metacritic-scores-game-sales-gdc-2015/
+- https://github.com/hoppedyr/gameRev - our SI project
+
+### Final business case
+
+We have decided to look and analyze two datasets, one containing video game sales, and one containing game reviews from the Metacritic website. For this we decided to look at things like how game reviews and game sales affect eachother, and if there even is a connection. We will also look at other information these datasets provide, like genres, sales and more, as we imagine we are working as BI consultants for the game industry. Our job is to use these two datasets and get valuable business knowledge through our analysis of the data.
+
+We will be using the Tableau tools and Python for our project.
+
+#### Hypothesis
+
+Our hypotheses is that games data contains valuable business knowledge, that can be used in the gaming industry. We also believe that game reviews must have some kind of effect on game sales, but to what extend we don't know yet.
 
 ## Business Data Storytelling
 
-Look at [Book-Exam.twb](Book-Exam.twb)
+### [Tableau Book Link](Book-Exam.twb)
 
 ### Datasets
 
@@ -61,11 +73,47 @@ Here are the links to the datasets:
 
 ### Data Prep using Tableau Prep
 
-We combined the datasets by ....
+We combined the datasets by integrating and preparing the data using Tableau Prep, which is an ETL tool. Using Tableau prep, we have cleaned and joined the datasets, to gain the information we want to analyze.
+
+Here is a sample of the Video Game Sales dataset, before we cleaned it.
+![Video Game Sales Sample Data](vgsalesSample.png)
+
+Here is a sample of the Metacritic Game Reviews dataset, before we cleaned it.
+![Metacritic Game Reviews Sample Data](metacriticSample.png)
+
+Here we can see Tableau Prep with what we did at each step, written in comments inside Tableau Prep.
+![Tableau Prep Img](TabPrep.png)
+
+The output from this process was a new CSV file of the combined and cleaned data.
+
+### Data Analysis
+
+This dashboard shows the average score of critics on the left, and on the right we see the number of reviews they have in the dataset. We have removed any below 50 reviews for accuracy. There are two figures, one showing the head and one showing the tail for comparison.
+
+This is interesting because we can see that some critics are very positive in general, and some are very critical. We can also see that review scores are generally very high, so a score of 60, might be worth the same as a 2/10 score, it all depends on the reviewer. Maybe the reviewers have learned that people generally wants to read positive reviews? Who knows, but it could be interesting to look into.
+![dashboard 1](tabImgs/dash1.png)
+
+This dashboard shows the top 10 games, based on global sales alone. Here we can see that Mario Kart 7 was quite popular and has sold the most copies.
+![dashboard 2](tabImgs/dash2.png)
+
+This dashboard explores how game review scores affect the global sales. We are shown the head of the data, and we can see the global sales in millions sold, and the average review score. It is sorted descending by average score.
+The first thing we notice is that there is not a clear connection between higher review score and the global sales. We can however see that there are major games and that they have sold many copies, but since we can't see more data below, we can't conclude anything from this.
+![dashboard 3](tabImgs/dash3.png)
+
+By looking at this next dashboard, where all the data has been fitted into the dashboard, we can see a clearer trend. We can't see the game names anymore but that's not so relevant, as we want to see if the review score has any impact on sales. What we can see is that all the best selling games are in the top half, and that there are no games in the bottom half that has sold over 5 million, except one maybe.
+
+We can also see that the best selling game isn't at the top, but it is in the top half. What we have concluded from this analysis, is that it seems like the sales decreases below a score of 80. It is hard to say why, and since we can't try releasing a terrible Mario Kart 7 with a score of 40, we can't really see if the impact is based on marketing budgets, brand exposure or something completely different. But what we now know is that it looks from the data, like score does affect sales. If you want to sell many copies of a game, then you have to put an effort into the game, and make the critics happy.
+![dashboard 4](tabImgs/dash4.png)
+
+This next dashboard shows which game genres sells the most in EU vs NA. You might expect to see no difference, but we actually found some. It seems that american gamers likes platformers, fighting, shooter and role-playing games a bit more than europeans. Europeans however seem to prefer sports, simulation, strategy and adventure a bit more than the americans. So if you want to sell an action game, you can do it in both regions no problem. But if you want a platformer to sell well, maybe you should focus on the american audience.
+![dashboard 5](tabImgs/dash5.png)
 
 ## Integrating AI
 
 Look at [Assignment 3 Integrating AI.ipynb](Assignment%203%20Integrating%20AI.ipynb) for our solution
+
+This dashboard shows us using a python prediction algorithm, to predict a review score based on the review text. We found this interesting to look at because reviews are very different, and we wanted to see if an AI algorithm could predict if someone is positive or negative in their review. It should however be said that we can see that reviews in general are almost always closer to 100 than 0, so a negative review can also be 80, 30 or 70, it depends on the reviewer.
+![dashboard 6](tabImgs/dash6.png)
 
 ## Immersive Analytics and Visualisation
 
