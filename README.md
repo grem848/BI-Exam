@@ -124,7 +124,7 @@ This next dashboard shows which game genres sells the most in EU vs NA. You migh
 
 Look at [Assignment 3 Integrating AI.ipynb](Assignment%203%20Integrating%20AI.ipynb) for our solution
 
-This dashboard shows us using a python prediction algorithm, to predict a review score based on the review text. We found this interesting to look at because reviews are very different, and we wanted to see if an AI algorithm could predict if someone is positive or negative in their review. It should however be said that we can see that reviews in general are almost always closer to 100 than 0, so a negative review can also be 80, 30 or 70, it depends on the reviewer.
+This dashboard shows us using a python prediction algorithm, to predict a review score based on the review text. We found this interesting to look at because reviews are very different, and we wanted to see if an AI algorithm could predict if someone is positive or negative in their review. It should however be said that we can see that reviews in general are almost always closer to 100 than 0, so a negative review can also be 80, 30 or 70, it depends on the reviewer. The prediction model we have used is also not very accuracte on paper, as it sits around a 22% accuracy, but we feel it still hits quite well. We simply didn't have time to make it better, and even tried with 4 different classifiers.
 ![dashboard 6](tabImgs/dash6.png)
 
 We also made a countplot using python, tabpy and Tableau, and made it load data and create the plot and then show it inside Tableau.
