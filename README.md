@@ -1,6 +1,4 @@
-# BI-Exam
-
-Look at Assignment 3 Integrating AI.ipynb for our solution
+# Business Intelligence in games and game reviews
 
 ## Business Case Foundation
 
@@ -29,6 +27,7 @@ Here are some sources we found that discuss some of the same topics that we init
 
 ### Final business case
 
+Our exam project is about games and game reviews, and how Business Intelligence can help us understand the data that we have, and analyze and use the data to improve our business.
 We have decided to look and analyze two datasets, one containing video game sales, and one containing game reviews from the Metacritic website. For this we decided to look at things like how game reviews and game sales affect eachother, and if there even is a connection. We will also look at other information these datasets provide, like genres, sales and more, as we imagine we are working as BI consultants for the game industry. Our job is to use these two datasets and get valuable business knowledge through our analysis of the data.
 
 We will be using the Tableau tools and Python for our project.
