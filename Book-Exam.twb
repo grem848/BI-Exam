@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<!-- build 20203.20.1018.2303                               -->
-<workbook original-version='18.1' source-build='2020.3.2 (20203.20.1018.2303)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 20203.20.1110.1623                               -->
+<workbook original-version='18.1' source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AutoCreateAndUpdateDSDPhoneLayouts />
     <IntuitiveSorting />
@@ -290,7 +290,7 @@
         </calculation>
       </column>
       <column caption='Python Plot' datatype='real' name='[Calculation_991073444466683907]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='SCRIPT_REAL(&quot;&#13;&#10;import pandas as pd&#13;&#10;import numpy as np&#13;&#10;import seaborn as sns&#13;&#10;import matplotlib.pyplot as plt&#13;&#10;&#13;&#10;review_df = pd.read_csv(&apos;C:/Users/Andreas Heick Laptop/Documents/VisualStudio Projects/SOFT - 2 Semester/BI/BI-Exam/metacritic_critic_reviews.csv&apos;).tail(1000)&#13;&#10;review_df=review_df[~review_df.isin([np.nan, np.inf, -np.inf]).any(1)]&#13;&#10;&#13;&#10;# plot platform for each review&#13;&#10;plt.figure(figsize=(15,5))&#13;&#10;sns.countplot(&apos;platform&apos;, data=review_df)&#13;&#10;return plt.show()&#13;&#10;&quot;, STR([Parameters].[Parameter 1]))'>
+        <calculation class='tableau' formula='SCRIPT_REAL(&quot;&#13;&#10;import pandas as pd&#13;&#10;import numpy as np&#13;&#10;import seaborn as sns&#13;&#10;import matplotlib.pyplot as plt&#13;&#10;&#13;&#10;review_df = pd.read_csv(&apos;C:/Users/Andreas Heick Laptop/Documents/VisualStudio Projects/SOFT - 2 Semester/BI/BI-Exam/metacritic_critic_reviews.csv&apos;)&#13;&#10;review_df=review_df[~review_df.isin([np.nan, np.inf, -np.inf]).any(1)]&#13;&#10;&#13;&#10;# plot platform for each review&#13;&#10;plt.figure(figsize=(15,5))&#13;&#10;sns.countplot(&apos;platform&apos;, data=review_df)&#13;&#10;return plt.show()&#13;&#10;&quot;, STR([Parameters].[Parameter 1]))'>
           <table-calc ordering-type='Rows' />
         </calculation>
       </column>
@@ -1154,7 +1154,7 @@
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.1ghzhzy025up6h10nf53y0heed5n'>
             <column caption='Python Plot' datatype='real' name='[Calculation_991073444466683907]' role='measure' type='quantitative'>
-              <calculation class='tableau' formula='SCRIPT_REAL(&quot;&#13;&#10;import pandas as pd&#13;&#10;import numpy as np&#13;&#10;import seaborn as sns&#13;&#10;import matplotlib.pyplot as plt&#13;&#10;&#13;&#10;review_df = pd.read_csv(&apos;C:/Users/Andreas Heick Laptop/Documents/VisualStudio Projects/SOFT - 2 Semester/BI/BI-Exam/metacritic_critic_reviews.csv&apos;).tail(1000)&#13;&#10;review_df=review_df[~review_df.isin([np.nan, np.inf, -np.inf]).any(1)]&#13;&#10;&#13;&#10;# plot platform for each review&#13;&#10;plt.figure(figsize=(15,5))&#13;&#10;sns.countplot(&apos;platform&apos;, data=review_df)&#13;&#10;return plt.show()&#13;&#10;&quot;, STR([Parameters].[Parameter 1]))'>
+              <calculation class='tableau' formula='SCRIPT_REAL(&quot;&#13;&#10;import pandas as pd&#13;&#10;import numpy as np&#13;&#10;import seaborn as sns&#13;&#10;import matplotlib.pyplot as plt&#13;&#10;&#13;&#10;review_df = pd.read_csv(&apos;C:/Users/Andreas Heick Laptop/Documents/VisualStudio Projects/SOFT - 2 Semester/BI/BI-Exam/metacritic_critic_reviews.csv&apos;)&#13;&#10;review_df=review_df[~review_df.isin([np.nan, np.inf, -np.inf]).any(1)]&#13;&#10;&#13;&#10;# plot platform for each review&#13;&#10;plt.figure(figsize=(15,5))&#13;&#10;sns.countplot(&apos;platform&apos;, data=review_df)&#13;&#10;return plt.show()&#13;&#10;&quot;, STR([Parameters].[Parameter 1]))'>
                 <table-calc ordering-type='Rows' />
               </calculation>
             </column>
@@ -2128,8 +2128,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='9' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='8' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='11' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='10' param='vert' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Critic/Avg. Score' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2194,8 +2194,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='9' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='8' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='11' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='10' param='vert' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Top 10 Global Game Sales' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2252,8 +2252,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='8' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='10' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='9' param='vert' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Scores effect on global sales for a game' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2301,8 +2301,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='8' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='7' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='10' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='9' param='vert' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Scores effect on global sales for a game' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2364,8 +2364,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='12' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='11' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='14' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='13' param='vert' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sum of Sales for EU/NA pr. genre' w='87100' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2442,8 +2442,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='13' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='12' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='15' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='14' param='vert' w='84000' x='8000' y='8000'>
                 <zone fixed-size='280' h='41250' id='3' is-fixed='true' name='Python ML' w='98400' x='800' y='16500'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2610,7 +2610,7 @@
       </viewpoint>
       <simple-id uuid='{07522183-DC55-497E-9E30-C4C865C76875}' />
     </window>
-    <window class='worksheet' maximized='true' name='Scores effect on global sales for a game'>
+    <window class='worksheet' name='Scores effect on global sales for a game'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2640,7 +2640,7 @@
       </viewpoint>
       <simple-id uuid='{66AC273C-71D2-4B84-BD0B-90FFB0BF74F0}' />
     </window>
-    <window class='worksheet' name='Scores effect on global sales pr. publisher/game'>
+    <window class='worksheet' maximized='true' name='Scores effect on global sales pr. publisher/game'>
       <cards>
         <edge name='left'>
           <strip size='160'>
