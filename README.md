@@ -84,26 +84,38 @@ Here is a sample of the Metacritic Game Reviews dataset, before we cleaned it.
 Here we can see Tableau Prep with what we did at each step, written in comments inside Tableau Prep.
 ![Tableau Prep Img](TabPrep.png)
 
-The output from this process was a new CSV file of the combined and cleaned data.
+The output from this process was a new CSV file of the combined and cleaned data, which we then imported into Tableau.
 
 ### Data Analysis
+
+After importing the data from Tableau Prep, we made sheets and dashboards to explore and analyze the data.
+
+#### Dashboard 1
 
 This dashboard shows the average score of critics on the left, and on the right we see the number of reviews they have in the dataset. We have removed any below 50 reviews for accuracy. There are two figures, one showing the head and one showing the tail for comparison.
 
 This is interesting because we can see that some critics are very positive in general, and some are very critical. We can also see that review scores are generally very high, so a score of 60, might be worth the same as a 2/10 score, it all depends on the reviewer. Maybe the reviewers have learned that people generally wants to read positive reviews? Who knows, but it could be interesting to look into.
 ![dashboard 1](tabImgs/dash1.png)
 
+#### Dashboard 2
+
 This dashboard shows the top 10 games, based on global sales alone. Here we can see that Mario Kart 7 was quite popular and has sold the most copies.
 ![dashboard 2](tabImgs/dash2.png)
+
+#### Dashboard 3
 
 This dashboard explores how game review scores affect the global sales. We are shown the head of the data, and we can see the global sales in millions sold, and the average review score. It is sorted descending by average score.
 The first thing we notice is that there is not a clear connection between higher review score and the global sales. We can however see that there are major games and that they have sold many copies, but since we can't see more data below, we can't conclude anything from this.
 ![dashboard 3](tabImgs/dash3.png)
 
+#### Dashboard 4
+
 By looking at this next dashboard, where all the data has been fitted into the dashboard, we can see a clearer trend. We can't see the game names anymore but that's not so relevant, as we want to see if the review score has any impact on sales. What we can see is that all the best selling games are in the top half, and that there are no games in the bottom half that has sold over 5 million, except one maybe.
 
 We can also see that the best selling game isn't at the top, but it is in the top half. What we have concluded from this analysis, is that it seems like the sales decreases below a score of 80. It is hard to say why, and since we can't try releasing a terrible Mario Kart 7 with a score of 40, we can't really see if the impact is based on marketing budgets, brand exposure or something completely different. But what we now know is that it looks from the data, like score does affect sales. If you want to sell many copies of a game, then you have to put an effort into the game, and make the critics happy.
 ![dashboard 4](tabImgs/dash4.png)
+
+#### Dashboard 5
 
 This next dashboard shows which game genres sells the most in EU vs NA. You might expect to see no difference, but we actually found some. It seems that american gamers likes platformers, fighting, shooter and role-playing games a bit more than europeans. Europeans however seem to prefer sports, simulation, strategy and adventure a bit more than the americans. So if you want to sell an action game, you can do it in both regions no problem. But if you want a platformer to sell well, maybe you should focus on the american audience.
 ![dashboard 5](tabImgs/dash5.png)
@@ -114,6 +126,10 @@ Look at [Assignment 3 Integrating AI.ipynb](Assignment%203%20Integrating%20AI.ip
 
 This dashboard shows us using a python prediction algorithm, to predict a review score based on the review text. We found this interesting to look at because reviews are very different, and we wanted to see if an AI algorithm could predict if someone is positive or negative in their review. It should however be said that we can see that reviews in general are almost always closer to 100 than 0, so a negative review can also be 80, 30 or 70, it depends on the reviewer.
 ![dashboard 6](tabImgs/dash6.png)
+
+We also made a countplot using python, tabpy and Tableau, and made it load data and create the plot and then show it inside Tableau.
+This count plot shows which platforms the reviews in our dataset have been made on. Reviews are mainly from PS4 and PC as we can see.
+![Count Plot](tabImgs/countplot.png)
 
 ## Immersive Analytics and Visualisation
 
